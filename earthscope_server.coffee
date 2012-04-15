@@ -29,18 +29,13 @@ request 'http://www.iris.edu/earthscope/usarray/ALL-OpStationList.txt', (error, 
     stats = body.split '\n'
     stats.shift()
     stats.pop()
-    loadStationData stats, '2012.102T08:50:00'
+    loadStationData stats.slice(0, 2), '2012.102T08:50:00'
     #loadStationData stats, '2011.235T05:45:00'
     #loadStationData stats, '2011.235T17:50:00'
 
 app.configure ->
   app.set 'views', __dirname + '/views'
   app.set 'view engine', 'jade'
-  app.use express.bodyParser()
-  app.use express.methodOverride()
-  app.use express.cookieParser()
-  app.use express.session
-    secret: 'nafinsoreo23'
   app.use require('stylus').middleware
     src: __dirname + '/public'
   app.use app.router
