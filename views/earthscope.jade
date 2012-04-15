@@ -136,13 +136,9 @@ script(type='text/javascript', src='http://appolition.com:5000/javascripts/kinet
     mul modelView, m
     translate modelView, [eye[0] * -1.0, eye[1] * -1.0, eye[2] * -1.0]
 
-  fixPolyVertex= (vertex, projection, modelView) ->
-    v = mul_v mul2(projection, modelView), toWebGL vertex
-    return {x: v[0] + 400.0, y: v[1] + 240.0}
-
   fixVertex= (vertex, projection, modelView) ->
     v = mul_v mul2(projection, modelView), toWebGL vertex
-    return [v[0] + 400.0, v[1] + 240.0]
+    return {x: v[0] + 400.0, y: v[1] + 240.0}
  
   class Polygon
     constructor: (shape) ->
@@ -188,7 +184,7 @@ script(type='text/javascript', src='http://appolition.com:5000/javascripts/kinet
     $.getJSON 'http://appolition.com:4000/4', (shape) ->
       $('#messages').html ''
       poly = new Polygon shape
-      poly.eachVertex fixPolyVertex, projection, modelView
+      poly.eachVertex fixVertex, projection, modelView
       usLayer = new Kinetic.Layer()
       for part in poly.parts
         ply = new Kinetic.Polygon
@@ -201,7 +197,7 @@ script(type='text/javascript', src='http://appolition.com:5000/javascripts/kinet
       $.getJSON 'http://appolition.com:4000/27', (shape) ->
         $('#messages').html ''
         poly = new Polygon shape
-        poly.eachVertex fixPolyVertex, projection, modelView
+        poly.eachVertex fixVertex, projection, modelView
         canadaLayer = new Kinetic.Layer()
         for part in poly.parts
           ply = new Kinetic.Polygon
@@ -214,7 +210,7 @@ script(type='text/javascript', src='http://appolition.com:5000/javascripts/kinet
         $.getJSON 'http://appolition.com:4000/18', (shape) ->
           $('#messages').html ''
           poly = new Polygon shape
-          poly.eachVertex fixPolyVertex, projection, modelView
+          poly.eachVertex fixVertex, projection, modelView
           mexicoLayer = new Kinetic.Layer()
           for part in poly.parts
             ply = new Kinetic.Polygon
@@ -235,15 +231,13 @@ script(type='text/javascript', src='http://appolition.com:5000/javascripts/kinet
              
               if station.samples
                 station.circle = new Kinetic.Circle
-                  x: station.loc[0],
-                  y: station.loc[1],
+                  x: station.loc.x,
+                  y: station.loc.y,
                   radius: 3,
                   fill: '#ffffff',
                   stroke: '#1b3664',
                   strokeWidth: 1,
                   listen: false
-              #else
-              #  station.circle.fill = '#fecd08'
                 stations.push station
                 stationLayer.add station.circle
             stage.add stationLayer
