@@ -29,7 +29,7 @@ request 'http://www.iris.edu/earthscope/usarray/ALL-OpStationList.txt', (error, 
     stats = body.split '\n'
     stats.shift()
     stats.pop()
-    loadStationData stats.slice(0, 2), '2012.102T08:50:00'
+    loadStationData stats, '2012.102T08:50:00'
     #loadStationData stats, '2011.235T05:45:00'
     #loadStationData stats, '2011.235T17:50:00'
 
