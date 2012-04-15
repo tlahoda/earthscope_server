@@ -1,0 +1,202 @@
+a {
+  text-decoration: none;
+}
+a:link {
+  color: #1b3664;
+}
+a:visited {
+  color: #1b3664;
+}
+.clear {
+  clear: both;
+}
+#main {
+  position: relative;
+  margin: 1em auto 1em auto;
+  border: 0.1em solid #1b3664;
+  -webkit-border-radius: 1em/1em;
+  -moz-border-radius: 1em/1em;
+  -o-border-radius: 1em/1em;
+  -ms-border-radius: 1em/1em;
+  -khtml-border-radius: 1em/1em;
+  border-radius: 1em/1em;
+  padding: 1em;
+  width: 75em;
+  min-height: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+}
+#main #main_header {
+  position: relative;
+  margin: 0;
+  border: 0.1em solid #1b3664;
+  border-bottom: 0.2em groove #fecd08;
+  border-right: 0.2em groove #fecd08;
+  -webkit-border-radius: 1em/1em;
+  -moz-border-radius: 1em/1em;
+  -o-border-radius: 1em/1em;
+  -ms-border-radius: 1em/1em;
+  -khtml-border-radius: 1em/1em;
+  border-radius: 1em/1em;
+  padding: 0;
+  background-color: #828282;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fecd08), color-stop(50%, #1b3664));
+  background-image: -webkit-linear-gradient(#fecd08, #1b3664);
+  background-image: -moz-linear-gradient(#fecd08, #1b3664);
+  background-image: -o-linear-gradient(#fecd08, #1b3664);
+  background-image: -ms-linear-gradient(#fecd08, #1b3664);
+  background-image: linear-gradient(#fecd08, #1b3664);
+  -moz-box-shadow: 0.5em 0.5em 0.5em #1b3664;
+  -webkit-box-shadow: 0.5em 0.5em 0.5em #1b3664;
+}
+#main #main_header #logo img {
+  float: left;
+  border: 0;
+  vertical-align: middle;
+}
+#main #main_header #motto {
+  float: left;
+  margin: 1em 0 0 1em;
+  width: 18em;
+  font-size: 0.8em;
+}
+#main #main_header #motto span {
+  text-shadow: #000 0.1em 0.1em 0.2em;
+  color: #fff;
+}
+#main #main_header #nav_menu {
+  position: absolute;
+  bottom: 0;
+  left: 37em;
+}
+#main #main_header #nav_menu .menu_item {
+  float: left;
+  margin: 0.5em;
+  border: 0.1em solid #1b3664;
+  border-bottom: 0.2em groove #fecd08;
+  border-right: 0.2em groove #fecd08;
+  -webkit-border-radius: 1em/1em;
+  -moz-border-radius: 1em/1em;
+  -o-border-radius: 1em/1em;
+  -ms-border-radius: 1em/1em;
+  -khtml-border-radius: 1em/1em;
+  border-radius: 1em/1em;
+  min-width: 8em;
+  height: 1.75em;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fecd08), color-stop(50%, #1b3664));
+  background-image: -webkit-linear-gradient(#fecd08, #1b3664);
+  background-image: -moz-linear-gradient(#fecd08, #1b3664);
+  background-image: -o-linear-gradient(#fecd08, #1b3664);
+  background-image: -ms-linear-gradient(#fecd08, #1b3664);
+  background-image: linear-gradient(#fecd08, #1b3664);
+}
+#main #main_header #nav_menu .menu_item a {
+  position: absolute;
+  bottom: 1em;
+  width: 8em;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: #000 0.1em 0.1em 0.2em;
+}
+#main #main_body {
+  margin: 0;
+  padding: 1em 0 0 0;
+}
+#main #main_body #left_column {
+  float: left;
+  width: 12em;
+  margin: 0;
+  padding: 0;
+}
+#main #main_body #left_column #left_content {
+  margin: 0;
+  padding: 0 0.5em;
+}
+#main #main_body #left_column #left_content .recursive_menu {
+  background-color: #fff;
+  font-weight: bold;
+}
+#main #main_body #left_column #left_content .recursive_menu .recursive_menu_header {
+  height: 1.5em;
+  font-size: 1.1em;
+  font-weight: bold;
+  -moz-box-shadow: 0.5em 0.5em 0.5em #1b3664;
+  -webkit-box-shadow: 0.5em 0.5em 0.5em #1b3664;
+  border: 0.1em solid #1b3664;
+  border-bottom: 0.2em groove #fecd08;
+  border-right: 0.2em groove #fecd08;
+  -webkit-border-radius: 1em/1em;
+  -moz-border-radius: 1em/1em;
+  -o-border-radius: 1em/1em;
+  -ms-border-radius: 1em/1em;
+  -khtml-border-radius: 1em/1em;
+  border-radius: 1em/1em;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fecd08), color-stop(50%, #1b3664));
+  background-image: -webkit-linear-gradient(#fecd08, #1b3664);
+  background-image: -moz-linear-gradient(#fecd08, #1b3664);
+  background-image: -o-linear-gradient(#fecd08, #1b3664);
+  background-image: -ms-linear-gradient(#fecd08, #1b3664);
+  background-image: linear-gradient(#fecd08, #1b3664);
+}
+#main #main_body #left_column #left_content .recursive_menu .recursive_menu_header span {
+  padding: 0 0 0 1em;
+  color: #fff;
+  text-shadow: #000 0.1em 0.1em 0.2em;
+}
+#main #main_body #left_column #left_content .recursive_menu .recursive_menu_body {
+  margin: 0 0 1em 0;
+  padding: 1em 0 1em 0;
+}
+#main #main_body #left_column #left_content .recursive_menu .recursive_menu_body .recursive_menu_item {
+  margin: 0 0 0 1.3em;
+  padding: 0;
+}
+#main #main_body #right_column {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 63em;
+}
+#main #main_body #right_column #right_content {
+  margin: 0;
+  padding: 0 0 0 0.5em;
+}
+#main #main_body #right_column #right_content .content_header {
+  height: 1.5em;
+  font-size: 1.1em;
+  font-weight: bold;
+  -moz-box-shadow: 0.5em 0.5em 0.5em #1b3664;
+  -webkit-box-shadow: 0.5em 0.5em 0.5em #1b3664;
+  border: 0.1em solid #1b3664;
+  border-bottom: 0.2em groove #fecd08;
+  border-right: 0.2em groove #fecd08;
+  -webkit-border-radius: 1em/1em;
+  -moz-border-radius: 1em/1em;
+  -o-border-radius: 1em/1em;
+  -ms-border-radius: 1em/1em;
+  -khtml-border-radius: 1em/1em;
+  border-radius: 1em/1em;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fecd08), color-stop(50%, #1b3664));
+  background-image: -webkit-linear-gradient(#fecd08, #1b3664);
+  background-image: -moz-linear-gradient(#fecd08, #1b3664);
+  background-image: -o-linear-gradient(#fecd08, #1b3664);
+  background-image: -ms-linear-gradient(#fecd08, #1b3664);
+  background-image: linear-gradient(#fecd08, #1b3664);
+}
+#main #main_body #right_column #right_content .content_header span {
+  padding: 0 0 0 1em;
+  color: #fff;
+  text-shadow: #000 0.1em 0.1em 0.2em;
+}
+#main #main_body #right_column .heading {
+  text-shadow: #000 0.1em 0.1em 0.2em;
+}
+#main #main_body #right_column .text_shadow {
+  text-shadow: #000 0.1em 0.1em 0.2em;
+}
+#main #main_body #right_column .shadow {
+  -moz-box-shadow: 0 0 0.2em #1b3664;
+  -webkit-box-shadow: 0 0 0.2em #1b3664;
+}

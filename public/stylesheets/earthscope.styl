@@ -1,0 +1,53 @@
+@import "common.styl"
+
+#viewer
+  position: relative
+  height: 485px
+
+  #messages
+    position: absolute
+    top: 220px
+    left: 330px
+    float: left
+    height: 480px
+    width: 800px
+    z-index: 10
+    font-size: 1.5em
+    font-weight: bold
+
+  #screen
+    position: absolute
+    float: left
+    top: 0
+    z-index: 0
+    border: 0.1em groove #1b3664
+    border-radius: 1.0em
+    fancy-borders()
+    shadow()
+    margin: 0
+    padding: 0
+
+    canvas
+      margin: 0
+      padding: 0
+      border: 0
+
+#progressbar
+  margin: 1.0em 0 0 0
+  height: 0.5em
+
+#pblabel
+  width: 100%
+  display: none
+
+  table
+    width: 100%
+
+    .left
+      text-align: left
+
+    .middle
+      text-align: center
+
+    .right
+      text-align: right

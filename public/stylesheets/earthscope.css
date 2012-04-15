@@ -1,0 +1,66 @@
+#viewer {
+  position: relative;
+  height: 485px;
+}
+#viewer #messages {
+  position: absolute;
+  top: 220px;
+  left: 330px;
+  float: left;
+  height: 480px;
+  width: 800px;
+  z-index: 10;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+#viewer #screen {
+  position: absolute;
+  float: left;
+  top: 0;
+  z-index: 0;
+  border: 0.1em groove #1b3664;
+  -webkit-border-radius: 1em/1em;
+  -moz-border-radius: 1em/1em;
+  -o-border-radius: 1em/1em;
+  -ms-border-radius: 1em/1em;
+  -khtml-border-radius: 1em/1em;
+  border-radius: 1em/1em;
+  border: 0.1em solid #1b3664;
+  border-bottom: 0.2em groove #fecd08;
+  border-right: 0.2em groove #fecd08;
+  -webkit-border-radius: 1em/1em;
+  -moz-border-radius: 1em/1em;
+  -o-border-radius: 1em/1em;
+  -ms-border-radius: 1em/1em;
+  -khtml-border-radius: 1em/1em;
+  border-radius: 1em/1em;
+  -moz-box-shadow: 0.5em 0.5em 0.5em #1b3664;
+  -webkit-box-shadow: 0.5em 0.5em 0.5em #1b3664;
+  margin: 0;
+  padding: 0;
+}
+#viewer #screen canvas {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+#progressbar {
+  margin: 1em 0 0 0;
+  height: 0.5em;
+}
+#pblabel {
+  width: 100%;
+  display: none;
+}
+#pblabel table {
+  width: 100%;
+}
+#pblabel table .left {
+  text-align: left;
+}
+#pblabel table .middle {
+  text-align: center;
+}
+#pblabel table .right {
+  text-align: right;
+}

@@ -1,0 +1,148 @@
+@import "common.styl"
+
+a
+  text-decoration: none
+
+a:link
+  color: #1b3664
+
+a:visited
+  color: #1b3664
+
+.clear
+  clear: both
+
+#main
+  position: relative
+  
+  margin: 1.0em auto 1.0em auto
+  border: 0.1em solid #1b3664
+  border-radius 1.0em
+  padding: 1.0em
+  width: 75.0em
+  min-height: 1.0em
+
+  font-family: Arial, Helvetica, sans-serif
+  font-size: 0.8em;
+
+  #main_header
+    position: relative
+
+    margin: 0
+    fancy-borders()
+    padding: 0
+
+    background-color: #828282
+    background-gradient: #fecd08 #1b3664
+    shadow()
+
+    #logo
+      img
+        float: left
+        border: 0
+        vertical-align: middle
+
+    #motto
+      float: left
+      margin: 1.0em 0 0 1.0em
+      width: 18.0em
+      font-size: 0.8em
+
+      span
+        text-shadow: black 0.1em 0.1em 0.2em
+        color: #ffffff
+
+    #nav_menu
+      position: absolute
+      bottom: 0
+      left: 37.0em
+
+      .menu_item
+        float: left
+        margin: 0.5em
+        fancy-borders()
+        min-width: 8.0em
+        height: 1.75em
+        background-gradient: #fecd08 #1b3664
+
+        a
+          position: absolute
+          bottom: 1.0em
+          width: 8.0em
+          color: #ffffff
+          font-size: 1.0em
+          font-weight: bold
+          text-align: center
+          text-shadow: black 0.1em 0.1em 0.2em
+
+  #main_body
+    margin: 0
+    padding: 1.0em 0 0 0
+
+    #left_column
+      float: left
+      width: 12.0em
+      margin: 0
+      padding: 0
+
+      #left_content
+        margin: 0
+        padding: 0 0.5em
+
+        .recursive_menu
+          background-color: #ffffff 
+          font-weight: bold
+
+          .recursive_menu_header
+            height: 1.5em
+            font-size: 1.1em
+            font-weight: bold
+            shadow()
+            fancy-borders()
+            background-gradient: #fecd08 #1b3664
+
+            span
+              padding: 0 0 0 1.0em
+              color: #ffffff
+              text-shadow: black 0.1em 0.1em 0.2em
+
+          .recursive_menu_body
+            margin: 0 0 1.0em 0
+            padding: 1.0em 0 1.0em 0
+
+            .recursive_menu_item
+              margin: 0 0 0 1.3em
+              padding: 0
+
+    #right_column
+      float: left
+      margin: 0
+      padding: 0
+      width: 63.0em
+
+      #right_content
+        margin: 0
+        padding: 0 0 0 0.5em
+
+        .content_header
+          height: 1.5em
+          font-size: 1.1em
+          font-weight: bold
+          shadow()
+          fancy-borders()
+          background-gradient: #fecd08 #1b3664
+
+          span
+            padding: 0 0 0 1.0em
+            color: #ffffff
+            text-shadow: black 0.1em 0.1em 0.2em
+
+       .heading 
+         text-shadow: black 0.1em 0.1em 0.2em
+
+       .text_shadow
+         text-shadow: black 0.1em 0.1em 0.2em
+
+       .shadow
+         -moz-box-shadow: 0 0 0.2em #1b3664;
+         -webkit-box-shadow: 0 0 0.2em #1b3664;

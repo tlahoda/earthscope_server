@@ -1,0 +1,23 @@
+border-radius(n)
+  -webkit-border-radius: n / n;
+  -moz-border-radius: n / n;
+  -o-border-radius: n / n;
+  -ms-border-radius: n / n;
+  -khtml-border-radius: n / n;
+  border-radius: n / n;
+
+background-gradient(t, b)
+  background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, t), color-stop(50%, b));
+  background-image:-webkit-linear-gradient(t, b);background-image:-moz-linear-gradient(t, b);
+  background-image:-o-linear-gradient(t, b);background-image:-ms-linear-gradient(t, b);
+  background-image:linear-gradient(t, b);
+
+fancy-borders()
+  border: 0.1em solid #1b3664
+  border-bottom: 0.2em groove #fecd08
+  border-right: 0.2em groove #fecd08
+  border-radius: 1.0em;
+
+shadow()
+  -moz-box-shadow: 0.5em 0.5em 0.5em #1b3664;
+  -webkit-box-shadow: 0.5em 0.5em 0.5em #1b3664;
