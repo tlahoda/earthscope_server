@@ -96,7 +96,7 @@ script(type='text/javascript', src='http://appolition.com:5000/javascripts/kinet
 
           $('#messages').html 'Loading data...'
 
-          $.getJSON 'http://appolition:5000/stations', (stats) ->
+          $.getJSON 'http://appolition.com:5000/stations', (stats) ->
             stationLayer = new Kinetic.Layer()
             for station in stats
               lat = parseFloat station.loc[0]
