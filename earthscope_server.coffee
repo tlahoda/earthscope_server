@@ -1,6 +1,8 @@
 express = require 'express'
 app = module.exports = express.createServer()
 
+fs = require 'fs'
+coffee = require 'coffee-script'
 request = require 'request'
 
 stations = new Array()
@@ -53,6 +55,12 @@ app.get '/', (req, res) ->
   res.render 'index',
     title: 'Appolition LLC',
     content_page: '/home'
+
+app.get '/scripts/:script.js', (req, res) ->
+  res.header 'Content-Type', 'application/x-javascript'
+  cs = fs.readFileSync "#{__dirname}/coffee/#{req.params.script}.coffee", "ascii"
+  js = coffee.compile cs
+  res.send js
 
 app.get '/stations', (req, res) ->
   res.json stations, { 'Access-Control-Allow-Origin': '*' }
