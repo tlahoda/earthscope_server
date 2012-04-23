@@ -58,6 +58,7 @@ app.get '/', (req, res) ->
 
 app.get '/scripts/:script.js', (req, res) ->
   res.header 'Content-Type', 'application/x-javascript'
+  res.header 'Access-Control-Allow-Origin', '*'
   cs = fs.readFileSync "#{__dirname}/coffee/#{req.params.script}.coffee", "ascii"
   js = coffee.compile cs
   res.send js
