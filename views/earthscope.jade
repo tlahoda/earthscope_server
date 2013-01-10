@@ -55,6 +55,9 @@ script(type='text/javascript', src='http://appolition.com:5000/javascripts/kinet
 
     curFrame = 0
     stations = new Array()
+
+    $('#messages').html 'Loading map...'
+
     $.getJSON 'http://appolition.com:4000/4', (shape) ->
       $('#messages').html ''
       poly = new Polygon shape
